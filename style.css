@@ -57,7 +57,7 @@ h1, h2, h3 {
 
 /* ================= HERO ================= */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('asset/1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../asset/1.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
