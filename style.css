@@ -1,0 +1,362 @@
+
+/* ================= ROOT ================= */
+:root {
+    --panto-orange: #e58411;
+    --panto-light-orange: #FFC071;
+    --dark-main: #1E1E1E;
+    --bg-gray: #F7F7F7;
+    --bg-review: #f3eded;
+    --text-muted: #8D8D8D;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-main);
+    font-size: 18px;
+    font-weight: 400;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* ================= TYPOGRAPHY ================= */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero h1 {
+    font-size: 64px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    z-index: 999;
+}
+
+.navbar-collapse {
+    transition: 0.3s ease;
+}
+
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .navbar .nav-link {
+        color: #000 !important;
+        text-align: center;
+        padding: 12px 0;
+    }
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/asset/d2bee09011d0ef5c5aab59b69714774a45812d7d.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 120px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ================= SECTIONS ================= */
+.py-100 {
+    padding: 100px 0;
+}
+
+.bg-light-gray {
+    background-color: var(--bg-gray);
+}
+
+.text-panto {
+    color: var(--panto-orange);
+}
+
+/* ================= PRODUCT CARD ================= */
+.product-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    margin-top: 40px;
+    height: 100%;
+}
+
+.product-img-bg {
+    background-color: #FAFAFA;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    overflow: visible;
+}
+
+.product-img-bg img {
+    max-height: 220px;
+    width: 100%;
+    max-width: 220px;
+    object-fit: contain;
+    transform: translateY(-40px);
+    filter: drop-shadow(0 30px 30px rgba(0,0,0,0.2));
+    transition: 0.3s ease;
+}
+
+.product-card:hover .product-img-bg img {
+    transform: translateY(-50px);
+}
+
+/* ================= EXPERIENCE SECTION ================= */
+.experience-img-left {
+    width: 100%;
+    overflow: hidden;
+        filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.27));
+
+}
+
+.couch-experience-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.experience-text-box {
+    padding: 30px;
+}
+
+/* ================= REVIEW SECTION ================= */
+.review-card-modern {
+    background-color: var(--bg-review);
+    max-width: 850px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.review-text {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* ================= CONTACT ================= */
+.contact-form-wrapper {
+    max-width: 800px;
+    width: 100%;
+}
+
+.panto-input {
+    border: 1px solid var(--panto-light-orange) !important;
+    border-radius: 6px;
+    padding: 16px 20px;
+    background: transparent;
+    font-size: 16px;
+    color: var(--dark-main);
+}
+
+.panto-input::placeholder {
+    color: #C4C4C4;
+}
+
+.btn-panto-send {
+    background-color: var(--panto-orange);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-panto-send:hover {
+    background-color: #cc750f;
+}
+
+/* ================= LINKS ================= */
+.view-all-link {
+    color: var(--panto-orange);
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.view-all-link:hover {
+    opacity: 0.8;
+}
+
+/* ================= FOOTER ================= */
+.footer-section {
+    background-color: var(--bg-gray);
+}
+
+.footer-brand {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.footer-desc {
+    font-size: 15px;
+    opacity: 0.8;
+    max-width: 320px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--panto-orange);
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--dark-main);
+    font-size: 15px;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.footer-social a {
+    color: var(--dark-main);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--panto-orange);
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+
+/* TABLET */
+@media (max-width: 991px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .product-img-bg {
+        height: 200px;
+    }
+
+    .product-img-bg img {
+        transform: translateY(-25px);
+        max-height: 170px;
+    }
+
+    .review-card-modern {
+        padding: 30px 20px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-desc {
+        margin: auto;
+    }
+
+    .footer-social {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+    .hero {
+        padding: 100px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .py-100 {
+        padding: 60px 0;
+    }
+
+    .review-card-modern {
+        padding: 25px 15px;
+    }
+
+    .product-card {
+    margin: 10px;
+   
+}
+
+.experience-img-left {
+    margin: 10px;
+
+   
+}
+
+
+}
+
+/* ================= WHY CHOOSING US FIX ================= */
+
+@media (max-width: 991px) {
+
+    .py-100 .row.align-items-center {
+        text-align: center;
+    }
+
+    .py-100 .row.align-items-center .col-lg-3:first-child {
+        margin-bottom: 40px;
+    }
+
+    .py-100 .row.align-items-center .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .view-all-link {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+/* Extra small mobile improvements */
+@media (max-width: 576px) {
+
+    .py-100 .row.align-items-center h2 {
+        font-size: 28px !important;
+    }
+
+    .py-100 .row.align-items-center h5 {
+        font-size: 18px;
+    }
+
+    .py-100 .row.align-items-center p {
+        font-size: 15px;
+    }
+}
